@@ -21,4 +21,4 @@ jobs:
       - name: Deploy app to S3 bucket
         run: aws s3 sync ./build/ s3://mencarelli-silo-web-app-artifacts --delete
       - name: Cloudfront cache invalidation
-        run: aws cloudfront create-invalidation --distribution-id E1QY9JUQRXBZNJ --paths /\*
+        run: aws cloudfront create-invalidation --distribution-id E1P4KD57XAB8XN --paths /\*
