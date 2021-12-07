@@ -6,5 +6,5 @@ import App from './components/App';
 import 'normalize.css'
 
 ReactDOM.render(
-    <App />, document.querySelector('#root')
+        <App />, document.querySelector('#root')
 );
