@@ -6,7 +6,7 @@ const IPData = ({ ip }) => {
         <>
             <p>Your visiting from {ip.city}, {ip.country}.</p>
             <p>Your IP is: {ip.ip}</p>
-            <p>This data is sourced from <a href="https://ip-fast.com/" class="text-white">Ip Fast</a></p>
+            <p>This data is sourced from <a href="https://ip-fast.com/" className="text-white">Ip Fast</a></p>
         </>
     );
 };
