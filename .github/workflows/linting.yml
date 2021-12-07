@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install Dev Dependencies
         run: npm install --include=dev
-      - name: Lint files
-        run: node_modules/eslint/bin/eslint.js src
+      - name: Lint Only
+        run: node_modules/eslint/bin/eslint.js $(git diff --name-only --diff-filter=d origin/main | grep -E "(src)" | grep -E "(.js$)")
