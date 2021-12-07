@@ -13,4 +13,4 @@ jobs:
       - name: Install Dev Dependencies
         run: npm install --include=dev
       - name: Lint Only
-        run: node_modules/eslint/bin/eslint.js $(git diff --name-only --diff-filter=d origin/main | grep -E "(src)" | grep -E "(.js$)")
+        run: node_modules/eslint/bin/eslint.js $(git diff --name-only --diff-filter=d main | grep -E "(src)" | grep -E "(.js$)")
