@@ -6,7 +6,7 @@ const RandomCat = ({ cat }) => {
         <>
             <h3>Here is a random cat photo</h3>
             <img src={cat.file} className="img-fluid rounded mx-auto d-block" alt="Random cat" />
-            <p>Random cat photo sourced from <a href="https://random.cat" class="text-white">Random.Cat</a></p>
+            <p>Random cat photo sourced from <a href="https://random.cat" className="text-white">Random.Cat</a></p>
         </>
     );
 };

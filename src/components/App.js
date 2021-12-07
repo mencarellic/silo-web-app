@@ -25,8 +25,8 @@ class App extends React.Component {
                     For more details on this, visit the GitHub repos:
                 </p>
                 <ul>
-                    <li><a href="https://github.com/mencarellic/silo-terraform" class="text-white">mencarellic/silo-terraform</a></li>
-                    <li><a href="https://github.com/mencarellic/silo-web-app" class="text-white">mencarellic/silo-web-app</a></li>
+                    <li><a href="https://github.com/mencarellic/silo-terraform" className="text-white">mencarellic/silo-terraform</a></li>
+                    <li><a href="https://github.com/mencarellic/silo-web-app" className="text-white">mencarellic/silo-web-app</a></li>
                 </ul>
                 <div className="px-4 py-5 my-5 text-center">
                     <IPData ip={this.state.ip} />
