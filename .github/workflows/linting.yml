@@ -1,0 +1,16 @@
+name: Linting
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dev Dependencies
+        run: npm install --include=dev
+      - name: Lint files
+        run: node_modules/eslint/bin/eslint.js src
